@@ -53,7 +53,7 @@ while True:
     lastName = random.choice(last)
 
     print("\n\n")
-    print("{} {}".format(firstName, lastName))#, file=sys.stderr) ***for some reason when I moved this to my github folder this part of the code no longer worked in vs code. It worked fine before even tho it was not printing in the red highlight when ran in terminal
+    print("{} {}".format(firstName, lastName), file=sys.stderr) 
     print("n\nn")
 
     try_again = input("n\nTry again? Press Enter else n to quit)\n")
