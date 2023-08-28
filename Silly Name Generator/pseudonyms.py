@@ -7,17 +7,18 @@
 # Print the names to the screen in order and in red font
 # Ask the user to quit or play again
 # If user plays again:
-    # repeat 
-# If user quits: 
-    # end and exit 
+    # repeat
+# If user quits:
+    # end and exit
 
 """Generate funny names by randomly combining names from 2 separate lists."""
 import sys
 import random
 def main():
     """Choose names at random from 2 tuples of names and print to screen."""
-    print("Welcome to the Psych 'Sidekick Name Picker.'\n")
-    print("A name just like Sean would pick for Gus:\n\n")
+
+print("Welcome to the Psych 'Sidekick Name Picker.'\n")
+print("A name just like Sean would pick for Gus:\n\n")
 
 first = ('Baby Oil', 'Bad News', 'Big Burps', "Bill 'Beenie-Weenie'",
              "Bob 'Stinkbug'", 'Bowel Noises', 'Boxelder', "Bud 'Lite'",
@@ -53,10 +54,10 @@ while True:
     lastName = random.choice(last)
 
     print("\n\n")
-    print("{} {}".format(firstName, lastName), file=sys.stderr) 
-    print("n\nn")
+    print("{} {}".format(firstName, lastName), file=sys.stderr)
+    print("\n\n")
 
-    try_again = input("n\nTry again? Press Enter else n to quit)\n")
+    try_again = input("\n\nTry again? Press Enter else n to quit)\n")
     if try_again.lower() == "n":
         break
 
